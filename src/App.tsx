@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import Fifth from './pages/Fifth';
 import First from './pages/first';
 import Fourth from './pages/fourth';
