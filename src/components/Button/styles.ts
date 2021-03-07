@@ -17,4 +17,9 @@ export const Container = styled.button<ContainerProps>`
     justify-content: center; 
     font-size: 16px;
     cursor: pointer;
+
+    svg {
+        font-size: 18px;
+        margin-left: 0.4rem;
+    }
 `;

@@ -8,7 +8,7 @@ export const Container = styled.div`
     border-radius: 50px;
     display: flex;
     flex-direction: column;
-    
+
     h1 {
         color: #FFF;
         margin-left: 5.5rem;
@@ -26,7 +26,7 @@ export const Container = styled.div`
     .content {
         display: flex;
         margin-left: 5.5rem;
-
+        transition: all ease 0.1s;
     }
 
     svg {

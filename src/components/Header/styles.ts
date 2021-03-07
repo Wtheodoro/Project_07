@@ -10,5 +10,6 @@ export const Container = styled.div`
         display: flex;
         justify-content: space-between;
         width: 20rem;
+        margin-right: 30rem;
     }
 `;

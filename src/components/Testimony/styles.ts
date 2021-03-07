@@ -10,13 +10,13 @@ export const Container = styled.div`
     justify-content: space-around;
     box-shadow: 0px 20px 0px rgba(0, 0, 0, 0.2);
     margin: 0.6rem;
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
     border: 1px solid #9C69E2;
 
     img {
         height: 90px;
         border-radius: 50%;
-        margin-bottom: 10rem;
+        margin-bottom: 8rem;
     }
 
     .content {

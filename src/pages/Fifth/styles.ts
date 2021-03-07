@@ -27,16 +27,31 @@ export const Container = styled.div`
         justify-content: space-evenly;
 
         .right-top {
-            display: flex;
+            display: flex; 
+            justify-content: flex-end;
+
+            & > button {
+                margin-right: 1rem;
+            }
         }
 
         .right-bottom {
             display: flex;
             text-align: start;
+            justify-content: space-around;
+            width: 44rem;
 
             .group {
                 display: flex;
                 flex-direction: column;
+            }
+
+            .logos {
+                display: flex;
+
+                svg {
+                    font-size: 4rem;
+                }
             }
         }
     }
