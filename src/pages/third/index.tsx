@@ -16,6 +16,7 @@ const third = () => {
       <Title fontSize={'40px'} children={'Features'}/>
       <Paragraph fontSize={'18px'} width={'584px'}
         children={'Some of the features and advantages that we provide for those of you who store data in this Data Warehouse'}/>
+        
       <div className="content">
         <div className="first">
           <Unity unityTitle={'Search Data'} backgroundColor={'#68C9BA20'}

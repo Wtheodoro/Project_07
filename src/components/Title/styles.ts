@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 interface ContainerProps {
-    fontSize: string
+    fontSize?: string
     width?: string
 }
 

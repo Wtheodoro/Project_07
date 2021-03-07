@@ -10,6 +10,9 @@ export const Container = styled.div<ContainerProps>`
     align-items: center;
     background: ${props => props.backgroundColor};
     border-radius: 50px;
+    width: 500px;
+    height: 360px;
+    margin: 2rem;
     
     .content {        
         display: flex;

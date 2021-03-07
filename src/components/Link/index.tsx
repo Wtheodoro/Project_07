@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from './styles';
 
 export interface LinkProps {
-  children: string
+  children?: string
 }
 
 const Link = (props: LinkProps) => {

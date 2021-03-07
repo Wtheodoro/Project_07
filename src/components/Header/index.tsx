@@ -10,10 +10,10 @@ const Header: React.FC = () => {
     <Container>
       <Logo />
       <div className="links">
-        <Link children={'About'}/>
-        <Link children={'Help'}/>
-        <Link children={'Features'}/>
-        <Link children={'Signup'}/>
+        <Link>About</Link>
+        <Link>Help</Link>
+        <Link>Features</Link>
+        <Link>Signup</Link>
       </div>
       <Button backgroundColor={'#FFF'} textColor={'#212353'} 
       icon={true} shadow={true}>Request Demo</Button>

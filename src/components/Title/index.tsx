@@ -3,7 +3,7 @@ import { Container } from './styles';
 
 export interface TitleProps {
   children: string
-  fontSize: string
+  fontSize?: string
   width?: string
 }
 
