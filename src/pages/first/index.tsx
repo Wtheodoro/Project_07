@@ -12,13 +12,13 @@ const first = () => {
       <Header />
       <div className="content">
         <div className="content-text">
-          <Title fontSize={'80px'} width={'645px'}
-          children={'Save your data storage here.'}
-          />
+          <Title fontSize={'80px'} width={'645px'}>
+            Save your data storage here.
+          </Title>
 
-          <Paragraph fontSize={'18px'} width={'380px'}
-          children={"Data Warehouse is a data storage area that has been tested for security, so you can store your data here safely but not be afraid of being stolen by others"}
-          />
+          <Paragraph fontSize={'18px'} width={'380px'}>
+            Data Warehouse is a data storage area that has been tested for security, so you can store your data here safely but not be afraid of being stolen by others
+          </Paragraph>
 
           <Button backgroundColor={'#9C69E2'} textColor={'#FFF'}>Learn more</Button>
         </div>

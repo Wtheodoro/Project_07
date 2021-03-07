@@ -13,9 +13,10 @@ import { Container } from './styles';
 const third = () => {
   return (
     <Container>
-      <Title fontSize={'40px'} children={'Features'}/>
-      <Paragraph fontSize={'18px'} width={'584px'}
-        children={'Some of the features and advantages that we provide for those of you who store data in this Data Warehouse'}/>
+      <Title fontSize={'40px'}>Features</Title>
+      <Paragraph fontSize={'18px'} width={'584px'}>
+        Some of the features and advantages that we provide for those of you who store data in this Data Warehouse
+      </Paragraph>
         
       <div className="content">
         <div className="first">
