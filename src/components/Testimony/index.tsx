@@ -1,15 +1,31 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { apiUser } from '../../services/api';
 import Paragraph from '../Paragraph';
 
 import { Container } from './styles';
 
+interface userType {
+  avatar_url: string | undefined
+  name: string | undefined
+  bio: string | undefined
+}
+
 const Testimony = () => {
+  const [choosenOne, setChoosenOne] = useState<any>()
+  const allGitHubNickName = ['virginia-silva', 'bm-santos', 'patriciahoc', 'meirylandmelo', 'danielfranchi', 'anammagalhaes', 'anaprzsiczny', 'gilsongama', 'patriciaalmeiida', 'miguelcutri', 'carolribeiro2112', 'dandariene', 'biagavirete', 'rafael-yokoyama', 'jenicarvalho', 'beatrizodorcik', 'guizellik', 'priscillasantana', 'wtheodoro']
+
+  useEffect(() => {
+    const randomNick = allGitHubNickName[Math.floor(Math.random() * allGitHubNickName.length)]
+    apiUser.get(`/${randomNick}`).then(response => setChoosenOne(response.data))
+
+  }, [])
+
   return (
     <Container>
-      <img src="https://github.com/wtheodoro.png" alt="Foto" data-testid="img"/>
+      <img src={choosenOne?.avatar_url} alt="Foto" data-testid="img"/>
       <div className="content">
-        <Paragraph fontSize={'18px'}>Walison Teodoro</Paragraph>
-        <Paragraph fontSize={'14px'}>Front-end Developer</Paragraph>
+        <Paragraph fontSize={'18px'}>{choosenOne?.name || 'CADÊ SEU NOME?'}</Paragraph>
+        <Paragraph fontSize={'14px'} color={'#9C69E2'}>{choosenOne?.bio || 'Front-end Dev on Facebook'}</Paragraph>
         <Paragraph fontSize={'18px'} width={'385px'}>
           Veni, vidi, vici. Carpe diem. Ex ore parvulorum veritas. Alis volat propriis. Exceptio regulam probat. Memento vivere. Amor vincit omnia. In vino veritas
         </Paragraph>
