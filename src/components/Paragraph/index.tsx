@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Container } from './styles';
 
-interface ParagraphProps {
+export interface ParagraphProps {
   children: string
   fontSize?: string
   width?: string

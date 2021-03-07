@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 interface ContainerProps {
-    backgroundColor: string;
+    backgroundColor?: string;
     textColor?: string
     shadow?: string;
 }

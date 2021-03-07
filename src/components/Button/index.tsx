@@ -2,9 +2,9 @@ import React from 'react';
 import { Container } from './styles';
 import { GrLinkNext } from 'react-icons/gr'
 
-interface BtnProps {
+export interface BtnProps {
   children: string
-  backgroundColor: string
+  backgroundColor?: string
   textColor?: string
   icon?: boolean
   shadow?: boolean

@@ -4,7 +4,7 @@ import Paragraph from '../Paragraph';
 
 import { Container } from './styles';
 
-interface UnityProps {
+export interface UnityProps {
   unityTitle: string
   children: string
   backgroundColor: string

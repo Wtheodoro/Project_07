@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from './styles';
 
-interface TitleProps {
+export interface TitleProps {
   children: string
   fontSize: string
   width?: string
