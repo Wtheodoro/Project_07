@@ -7,11 +7,13 @@ interface ContainerProps {
 export const Container = styled.div<ContainerProps>`
 
     display: flex;
+    align-items: center;
     background: ${props => props.backgroundColor};
     border-radius: 50px;
     
     .content {        
-
+        display: flex;
+        flex-direction: column;
 
         p {
             display: flex;
