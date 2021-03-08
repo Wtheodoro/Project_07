@@ -3,10 +3,12 @@ import Testimony from '../../components/Testimony';
 import Title from '../../components/Title';
 import { Container } from './styles';
 import { HiOutlineArrowRight, HiOutlineArrowLeft } from 'react-icons/hi'
+import SwitchBlankDots from '../../components/SwitchBlankDots';
 
 const Fourth = () => {
   const [usersInfo] = useState<any>(['1', '2', '3', '4', '5', '6', '7'])
   const [scrollX, setScrollX] = useState<any>(-80)
+  const [constanteDeWalison, setConstanteDeWalison] = useState<number>(1)
 
   const scrollLeft = () => {
     let x = scrollX - Math.round(window.innerWidth/5)
@@ -15,7 +17,7 @@ const Fourth = () => {
       x = -80
     }
     setScrollX(x)
-    console.log(usersInfo.length)
+    setConstanteDeWalison(constanteDeWalison - 1)
   }
 
   const scrollRight = () => {
@@ -24,6 +26,7 @@ const Fourth = () => {
       return
     }
     setScrollX(x)
+    setConstanteDeWalison(constanteDeWalison + 1)
   }
 
   return (
@@ -36,10 +39,14 @@ const Fourth = () => {
           ))
         }
       </div>
-      <div className="arrow">
-        <HiOutlineArrowLeft onClick={scrollLeft} style={{ cursor: 'pointer'}}/>
-        <HiOutlineArrowRight onClick={scrollRight} style={{ cursor: 'pointer'}}/>
+      <div className="bot">
+        <SwitchBlankDots dotPosition={Math.round(constanteDeWalison/1.8)}/>
+        <div className="arrow">
+          <HiOutlineArrowLeft onClick={scrollLeft} style={{ cursor: 'pointer'}}/>
+          <HiOutlineArrowRight onClick={scrollRight} style={{ cursor: 'pointer'}}/>
+        </div>
       </div>
+      
       
     </Container>
   );

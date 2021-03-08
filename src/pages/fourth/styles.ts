@@ -8,6 +8,7 @@ export const Container = styled.div`
     border-radius: 50px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 6rem;
 
     h1 {
         color: #FFF;
@@ -36,8 +37,16 @@ export const Container = styled.div`
         margin-top: 2rem;
     }
 
-    .arrow {
+    .bot {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 2rem;
+
+        .arrow {
         display: flex;
         justify-content: flex-end;
+        }
     }
+    
 `;
