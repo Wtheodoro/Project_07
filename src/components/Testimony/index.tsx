@@ -4,12 +4,6 @@ import Paragraph from '../Paragraph';
 
 import { Container } from './styles';
 
-interface userType {
-  avatar_url: string | undefined
-  name: string | undefined
-  bio: string | undefined
-}
-
 const Testimony = () => {
   const [choosenOne, setChoosenOne] = useState<any>()
   const allGitHubNickName = ['virginia-silva', 'bm-santos', 'patriciahoc', 'meirylandmelo', 'danielfranchi', 'anammagalhaes', 'anaprzsiczny', 'gilsongama', 'patriciaalmeiida', 'miguelcutri', 'carolribeiro2112', 'dandariene', 'biagavirete', 'rafael-yokoyama', 'jenicarvalho', 'beatrizodorcik', 'guizellik', 'priscillasantana', 'wtheodoro']
@@ -17,8 +11,7 @@ const Testimony = () => {
   useEffect(() => {
     const randomNick = allGitHubNickName[Math.floor(Math.random() * allGitHubNickName.length)]
     apiUser.get(`/${randomNick}`).then(response => setChoosenOne(response.data))
-
-  }, [])
+  },[])
 
   return (
     <Container>

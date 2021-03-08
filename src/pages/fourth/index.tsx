@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Testimony from '../../components/Testimony';
 import Title from '../../components/Title';
-import { apiUser } from '../../services/api';
 import { Container } from './styles';
 import { HiOutlineArrowRight, HiOutlineArrowLeft } from 'react-icons/hi'
 
 const Fourth = () => {
-  const [usersInfo, setUsersInfo] = useState<any>(['1', '2', '3', '4', '5', '6', '7'])
+  const [usersInfo] = useState<any>(['1', '2', '3', '4', '5', '6', '7'])
   const [scrollX, setScrollX] = useState<any>(-80)
 
   const scrollLeft = () => {
@@ -33,7 +32,7 @@ const Fourth = () => {
       <div className="content" style={{ marginLeft: -scrollX }}>
         {
           usersInfo.map((i: string[]) => (
-            <Testimony />
+            <Testimony key={Math.random()}/>
           ))
         }
       </div>
