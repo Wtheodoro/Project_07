@@ -37,8 +37,8 @@ const Fourth = () => {
         }
       </div>
       <div className="arrow">
-        <HiOutlineArrowLeft onClick={scrollLeft}/>
-        <HiOutlineArrowRight onClick={scrollRight}/>
+        <HiOutlineArrowLeft onClick={scrollLeft} style={{ cursor: 'pointer'}}/>
+        <HiOutlineArrowRight onClick={scrollRight} style={{ cursor: 'pointer'}}/>
       </div>
       
     </Container>
