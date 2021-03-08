@@ -17,7 +17,7 @@ const Testimony = () => {
     <Container>
       <img src={choosenOne?.avatar_url} alt="Foto" data-testid="img"/>
       <div className="content">
-        <Paragraph fontSize={'18px'}>{choosenOne?.name || 'CADÊ SEU NOME?'}</Paragraph>
+        <Paragraph fontSize={'18px'}>{choosenOne?.name || 'Leo Merenda'}</Paragraph>
         <Paragraph fontSize={'14px'} color={'#9C69E2'}>{choosenOne?.bio || 'Front-end Dev on Facebook'}</Paragraph>
         <Paragraph fontSize={'18px'} width={'385px'}>
           Veni, vidi, vici. Carpe diem. Ex ore parvulorum veritas. Alis volat propriis. Exceptio regulam probat. Memento vivere. Amor vincit omnia. In vino veritas

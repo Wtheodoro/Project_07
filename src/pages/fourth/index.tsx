@@ -17,7 +17,11 @@ const Fourth = () => {
       x = -80
     }
     setScrollX(x)
-    setConstanteDeWalison(constanteDeWalison - 1)
+    if (constanteDeWalison <= 1) {
+      return
+    } else {
+      setConstanteDeWalison(constanteDeWalison - 1)
+    }
   }
 
   const scrollRight = () => {
