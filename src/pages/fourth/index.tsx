@@ -32,7 +32,7 @@ const Fourth = () => {
       <div className="content" style={{ marginLeft: -scrollX }}>
         {
           usersInfo.map((i: string[]) => (
-            <Testimony key={Math.random()}/>
+            <Testimony key={Number(i)}/>
           ))
         }
       </div>

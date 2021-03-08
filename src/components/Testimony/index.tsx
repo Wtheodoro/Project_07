@@ -11,7 +11,7 @@ const Testimony = () => {
   useEffect(() => {
     const randomNick = allGitHubNickName[Math.floor(Math.random() * allGitHubNickName.length)]
     apiUser.get(`/${randomNick}`).then(response => setChoosenOne(response.data))
-  },[])
+  }, [])
 
   return (
     <Container>
